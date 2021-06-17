@@ -1,10 +1,10 @@
-$('#formlogin').submit(function(e){
+$('#formLogin').submit(function(e){
     e.preventDefault();
     var usuario = $.trim($("#usuario").val());
     var password = $.trim($("#password").val());
 
     if(usuario.length == "" || password == ""){
-        swall.fire({
+        Swal.fire({
             type:'warning',
             title:'Debe ingresar un usuario y/o password',
         });
@@ -17,11 +17,6 @@ $('#formlogin').submit(function(e){
                 data: {usuario:usuario, password:password},
                 success:function(data){
                     if(data == "null"){
-                        Swal.fire({
-                            type:'error',
-                            title:'usuario y/o password incorrecta',
-                        });
-                    }else{
                         Swal.fire({
                             type:'success',
                             title:'¡Conexión exitosa!',

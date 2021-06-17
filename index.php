@@ -24,7 +24,7 @@
                 <div id="login-column" class="col-md-6">
 
                 <div id="login-box" class="col-md-12 bg-light text-dark">
-                    <form id="formlogin" class="form" action="" method="post">
+                    <form id="formLogin" class="form" action="" method="post">
 
                         <div class="form-group">
                             <label for="usuario" class="text-dark">Usuario</label>
@@ -46,8 +46,6 @@
                         </div>
 
                         <h1></h1>
-
-                        
 
                     </form>
                 </div>
