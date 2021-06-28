@@ -3,7 +3,7 @@ include_once '/bd/conexion.php';
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 
-$consulta = "SELECT id, tarea, accion, FROM usuarios";
+$consulta = "SELECT id, tarea, accion, FROM listadotareas";
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
 $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
